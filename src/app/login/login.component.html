@@ -1,0 +1,77 @@
+<body class="my-login-page">
+  <section class="h-100">
+    <div class="container h-100">
+      <div class="row justify-content-md-center h-100">
+        <div class="card-wrapper">
+          <div class="brand">
+            <img src="assets/logo.jpg" alt="logo" />
+          </div>
+          <div class="card fat">
+            <div class="card-body">
+              <h4 class="card-title">Login</h4>
+
+              <form>
+                <form [formGroup]="loginForm">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      formControlName="email"
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" class="form-text"></div>
+                    <span
+                      class="text-danger"
+                      *ngIf="
+                        loginForm.controls.email.errors &&
+                        loginForm.controls.email.touched
+                      "
+                      ><br />Invalid Email Address</span
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      formControlName="password"
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                    <span
+                      class="text-danger"
+                      *ngIf="
+                        loginForm.controls.password.errors &&
+                        loginForm.controls.password.touched
+                      "
+                      ><br />Invalid Password</span
+                    >
+                  </div>
+                  <div class="form-group m-0">
+                    <button
+                      type="submit"
+                      (click)="login()"
+                      class="btn btn-primary"
+                      [disabled]="!loginForm.valid"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<!-- <div class="mt-4 text-center">
+Don't have an account? <a href="register.html">Create One</a>
+</div> -->

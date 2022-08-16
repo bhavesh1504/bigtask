@@ -1,0 +1,109 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "suraj shukla",
+      "email": "suraj@gmail.com",
+      "password": "suraj",
+      "id": 3
+    },
+    {
+      "name": "suklnln",
+      "email": "voVOUGI@",
+      "password": "IVUGEVG",
+      "id": 5
+    },
+    {
+      "name": "nimap",
+      "email": "nimap@gmail.com",
+      "password": "nimap",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "name": "jbjbjn",
+      "email": "jkbkj",
+      "password": "",
+      "id": 8
+    },
+    {
+      "name": "anuj",
+      "email": "anuj@gmail.com",
+      "password": "llllll",
+      "id": 9
+    },
+    {
+      "name": "bhavesh nair",
+      "email": "bhavesh@gmail.com",
+      "password": "bhavesh",
+      "id": 10
+    },
+    {
+      "name": "hello",
+      "email": "hello@gmail.com",
+      "password": "hheelloo",
+      "id": 11
+    },
+    {
+      "name": "jay sharma",
+      "email": "jay@gmail.com",
+      "password": "jaysharma",
+      "id": 12
+    },
+    {
+      "name": "omkar",
+      "email": "omkar@gmail.com",
+      "password": "oooooo",
+      "id": 13
+    },
+    {
+      "name": "anuj",
+      "email": "anuj@gmail.com",
+      "password": "aaaaaa",
+      "id": 14
+    },
+    {
+      "name": "jayesh",
+      "email": "jayesh@gmail.com",
+      "password": "jjjjjj",
+      "id": 15
+    },
+    {
+      "name": "aman",
+      "email": "a@a.com",
+      "password": "aaaaaa",
+      "id": 16
+    },
+    {
+      "name": "bman",
+      "email": "b@b.com",
+      "password": "bbbbbb",
+      "id": 17
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

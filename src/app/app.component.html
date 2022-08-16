@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top ">
+  <div class="container">
+    <a class="navbar-brand">Hello There!</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLinkActive="active"
+            routerLink="dashboard"
+            >dashboard</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="!IsUserLoggedOut()">
+          <a class="nav-link" routerLinkActive="active" routerLink="login"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="register"
+            >Register</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="IsUserLoggedOut()">
+          <a
+            class="nav-link"
+            (click)="authSignOut()" id="hello"
+            >Logout</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

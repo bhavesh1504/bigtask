@@ -1,3 +1,14 @@
+#Task
+
+This task include authentication:- Create an app where there are 3 route: login, register, home. User can access home route only if he is logged in, else he should be redirected to login page (for data storage and retreival use JSON Server).
+
+
+
+
+
+
+
+
 # Bigtask
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
